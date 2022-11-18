@@ -1,0 +1,264 @@
+.wrapper-today-value {
+  .custom-checkbox {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background: white;
+    cursor: pointer;
+    border: 1px solid lightgray;
+    appearance: none;
+    -webkit-appearance: none;
+
+    &:checked {
+      background: green;
+      border: 0;
+      background-image: url("../images/icon-check.svg");
+      background-size: 20px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-color: #35d9d8;
+    }
+  }
+
+  label {
+    color: #75737d;
+  }
+}
+
+.list-project {
+  .info {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 23px;
+      height: 23px;
+      border-radius: 50%;
+      border: 3px solid #252a41;
+      background: #fff;
+      top: -8px;
+      right: -8px;
+    }
+  }
+
+  .active {
+    position: relative;
+    z-index: 2;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 120px;
+      height: 120px;
+      border: 4px solid transparent;
+      border-radius: 18px;
+      z-index: -1;
+
+      background: linear-gradient(#252a41, #252a41) padding-box,
+        linear-gradient(45deg, #2cd5a4, #3874e3) border-box;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      z-index: -1;
+      background: inherit;
+      border-radius: inherit;
+    }
+  }
+}
+
+.pattern {
+  background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%234C5269' fill-opacity='0.4' fill-rule='evenodd'%3E%3Ccircle cx='3' cy='3' r='3'/%3E%3Ccircle cx='13' cy='13' r='3'/%3E%3C/g%3E%3C/svg%3E");
+}
+
+.wrapper-today-value {
+  .approved {
+    background: #e0f5f5;
+    color: #70c5c3;
+  }
+
+  .in-progress {
+    background: #e4effe;
+    color: #628ec6;
+  }
+
+  .in-review {
+    background: #fdeee8;
+    color: #eba994;
+  }
+
+  .waiting {
+    background: #eceef0;
+    color: #868e94;
+  }
+}
+
+.pattern-project-1 {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    border-radius: 50%;
+    bottom: -35px;
+    left: -35px;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    top: -20px;
+    right: -20px;
+    z-index: -1;
+  }
+}
+
+.pattern-project-2 {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 65px;
+    height: 65px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    // border-radius: 50%;
+    bottom: -25px;
+    left: -25px;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    border-radius: 50%;
+    top: -30px;
+    right: -30px;
+    z-index: -1;
+  }
+}
+
+.pattern-project-3 {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    border-radius: 50%;
+    bottom: -52px;
+    left: 10%;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    top: -40px;
+    left: -40px;
+    z-index: -1;
+  }
+}
+
+.pattern-project-4 {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 85px;
+    height: 85px;
+    border: 15px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    border-radius: 50%;
+    left: -40px;
+    top: 7px;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+  }
+}
+
+.pattern-project-5 {
+  position: absolute;
+  overflow: hidden;
+  z-index: 1;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+
+    border-radius: 50%;
+    bottom: -40px;
+    right: -40px;
+    z-index: -1;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 70px;
+    border: 20px solid rgba(254, 254, 253, 0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */
+    top: -35px;
+    left: -20px;
+    z-index: -1;
+  }
+}
