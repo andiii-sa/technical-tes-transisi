@@ -108,15 +108,15 @@ function App() {
 
         <div className="lg:flex-1 flex-auto md:mt-0 mt-5 bg-white min-h-[calc(100vh-0.5rem)] rounded-2xl py-12 px-10 relative">
           <div className="flex-col px-6">
-            <div className="flex flex-row justify-between">
-              <div className="flex-1 flex-col">
+            <div className="flex flex-row flex-wrap justify-between">
+              <div className="md:flex-1 flex-col">
                 <h2 className="text-3xl font-bold text-navy">Cyber Punk</h2>
                 <p className="text-secondary2 font-normal text-md mt-4">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit
                   dicta, aperiam quia quo repudiandae commodi fugit maiores.
                 </p>
               </div>
-              <div className="flex-none">
+              <div className="md:flex-none flex-col md:mt-0 mt-3">
                 <div className="flex flex-row items-center wrapper-member">
                   <img
                     src="https://picsum.photos/200"
@@ -147,7 +147,7 @@ function App() {
                   <IconDots />
                 </button>
               </div>
-              <div className="wrapper-today-value flex flex-row items-center justify-between mb-3">
+              <div className="wrapper-today-value flex flex-row md:flex-nowrap flex-wrap items-center justify-between mb-3">
                 <div className="flex flex-row items-center">
                   <input
                     type="checkbox"
@@ -156,11 +156,11 @@ function App() {
                   />
                   <label>Create initial layout for homepage</label>
                 </div>
-                <span className="approved rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1">
+                <span className="approved rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1 md:mt-0 mt-3 ml-9">
                   Approved
                 </span>
               </div>
-              <div className="wrapper-today-value flex flex-row items-center justify-between mb-3">
+              <div className="wrapper-today-value flex flex-row md:flex-nowrap flex-wrap items-center justify-between mb-3">
                 <div className="flex flex-row items-center">
                   <input
                     type="checkbox"
@@ -169,25 +169,25 @@ function App() {
                   />
                   <label>Fixing icons with transparant background</label>
                 </div>
-                <span className="in-progress rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1">
+                <span className="in-progress rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1 md:mt-0 mt-3 ml-9">
                   In Progress
                 </span>
               </div>
-              <div className="wrapper-today-value flex flex-row items-center justify-between mb-3">
+              <div className="wrapper-today-value flex flex-row md:flex-nowrap flex-wrap items-center justify-between mb-3">
                 <div className="flex flex-row items-center">
                   <input type="checkbox" className="mr-2 custom-checkbox" />
                   <label>Discussion regarding workflow improvement</label>
                 </div>
-                <span className="in-review rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1">
+                <span className="in-review rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1 md:mt-0 mt-3 ml-9">
                   In Review
                 </span>
               </div>
-              <div className="wrapper-today-value flex flex-row items-center justify-between mb-3">
+              <div className="wrapper-today-value flex flex-row md:flex-nowrap flex-wrap items-center justify-between mb-3">
                 <div className="flex flex-row items-center">
                   <input type="checkbox" className="mr-2 custom-checkbox" />
                   <label>Create quotation for app redesign project</label>
                 </div>
-                <span className="waiting rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1">
+                <span className="waiting rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1 md:mt-0 mt-3 ml-9">
                   Waiting
                 </span>
               </div>
@@ -195,7 +195,7 @@ function App() {
                 listToday?.map((list, idx) => (
                   <div
                     key={idx}
-                    className="wrapper-today-value flex flex-row items-center justify-between mb-3"
+                    className="wrapper-today-value flex flex-row md:flex-nowrap flex-wrap items-center justify-between mb-3"
                   >
                     <div className="flex flex-row items-center">
                       <input type="checkbox" className="mr-2 custom-checkbox" />
@@ -203,7 +203,7 @@ function App() {
                     </div>
                     <span
                       className={[
-                        "rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1",
+                        "rounded-2xl whitespace-nowrap text-sm font-semibold px-4 py-1 md:mt-0 mt-3 ml-9",
                         list?.status === "Approved"
                           ? "approved"
                           : list?.status === "In Progress"
